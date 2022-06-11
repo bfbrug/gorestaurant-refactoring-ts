@@ -5,17 +5,17 @@ import { Container } from "./styles";
 import Logo from "../../assets/logo.svg";
 
 interface IHeaderProps {
-  onOpenModal: () => void;
+  openModal: () => void;
 }
 
-export function Header({ onOpenModal }: IHeaderProps) {
+export function Header({ openModal }: IHeaderProps) {
   return (
     <Container>
       <header>
         <img src={Logo} alt="GoRestaurant" />
         <nav>
           <div>
-            <button type="button" onClick={onOpenModal}>
+            <button type="button" onClick={openModal}>
               <div className="text">Novo Prato</div>
               <div className="icon">
                 <FiPlusSquare size={24} />
